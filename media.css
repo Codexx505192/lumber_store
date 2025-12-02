@@ -1,0 +1,187 @@
+@media(max-width: 1200px){
+    .container{
+        width: 900px;
+    }
+}
+
+@media(max-width: 900px){
+    .container{
+        width: 700px;
+    }
+
+    .btn2{
+        font-size: 9px;
+    }
+
+    .txt5{
+        font-size: 12px;
+    }
+
+    .txt4{
+        font-size: 12px;
+    }
+
+    .txt3{
+        font-size: 12px;
+    }
+
+    .input_blck {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+
+@media(max-width:756px){
+    .container{
+        width: 500px;
+    }
+
+    .txt3{
+        font-size: 10px;
+    }
+}
+
+@media(max-width: 576px){
+    .container{
+        width: 100%;
+        padding: 0 10px;
+    }
+
+
+    .lft_info {
+        gap: 4px;
+    }
+
+    .btn {
+        width: 109px;
+    }
+}
+
+@media(max-width: 375px){
+    .txt1{
+        display: none;
+    }
+
+    .input_blck{
+        display: none;
+    }
+
+    .lft_info {
+        display: none;
+    }
+
+    .md1{
+        display: none;
+    }
+
+    .md2{
+        display: none;
+    }
+
+    .md3{
+        display: none;
+    }
+
+    .li1 a{
+        font-size: 10px;
+    }
+
+    .li1s {
+        font-size: 10px;
+    }
+
+    .txt2{
+        font-size: 12px;
+    }
+
+   .accordion{
+    display: none;
+   }
+  
+}
+
+@media(max-width: 414px){
+    .txt1{
+        display: none;
+    }
+
+    .li1 a{
+        font-size: 10px;
+    }
+
+    .li1s {
+        font-size: 10px;
+    }
+
+    .txt2{
+        font-size: 12px;
+    }
+
+    .md1{
+        display: none;
+    }
+
+    .md2{
+        display: none;
+    }
+
+    .md3{
+        display: none;
+    }
+
+    .input_blck{
+        display: none;
+    }
+}
+
+
+
+@media(max-width: 430px){
+
+    .container{
+        width: 100%;
+        padding: 0 10px;
+    }
+    .txt1{
+        display: none;
+    }
+
+    .input_blck{
+        display: none;
+    }
+
+
+    .li1 a{
+        font-size: 10px;
+    }
+
+    .li1s {
+        font-size: 10px;
+    }
+
+
+    .txt2{
+        font-size: 12px;
+    }
+
+    .md1{
+        display: none;
+    }
+
+    .md2{
+        display: none;
+    }
+
+    .md3{
+        display: none;
+    }
+
+    .lft_info{
+        display: none;
+    }
+
+    .txt3 {
+        font-size: 5px;
+    }
+}

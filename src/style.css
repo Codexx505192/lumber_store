@@ -1,0 +1,337 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.container{
+  width: 1920px;
+  /* background-color: aqua; */
+  margin: auto;
+
+  display: flex;
+  justify-content: center;
+  gap: 18px
+  ;
+}
+
+
+header{
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+.top_header{
+  max-width: 100%;
+
+  background-color: #F5F5F5;
+  display: flex;
+  justify-content: center;
+  padding: 14px 0 9px;
+}
+
+
+.bottom_header{
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  padding: 14px 0 15px;
+}
+
+.info_block{
+  display: flex;
+}
+
+
+
+.ul1{
+  display: flex;
+  gap: 33px;
+  list-style: none;
+}
+
+.li1 a{
+  color: #888888;
+}
+
+.li1{
+  display: flex;
+  gap: 12px;
+}
+
+
+/* -- */
+
+.accordion {
+  max-width: 280px;
+  /* margin: 20px auto; */
+  /* height: 565px; */
+  border-radius: 10px;
+  background: #f7f9fa;
+  padding: 10px;
+  font-family: sans-serif;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #ccc;
+}
+
+.accordion-header {
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+
+.accordion-header::after {
+  content: "▾";
+  position: absolute;
+  right: 10px;
+  transition: transform 0.3s;
+}
+
+.accordion-header.active::after {
+  transform: rotate(180deg);
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding: 0 12px;
+}
+
+.accordion-content.open {
+  max-height: 100px; /* можно больше, если контента много */
+  padding-bottom: 10px;
+}
+/* -- */
+
+
+
+.product_container{
+  max-width: 931px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.li1s{
+  color: #888888;
+  font-family: Roboto;
+font-weight: 400;
+font-size: 14px;
+}
+
+
+.info_bottom{
+  display: flex;
+}
+
+.lft_info{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+
+
+.txt1{
+  font-family: Roboto;
+font-weight: 400;
+font-size: 14px;
+color: #888888;
+}
+
+
+.rght_info{
+  display: flex;
+  gap: 26px;
+}
+
+
+.btn{
+  cursor: pointer;
+  border: none;
+  width: 181px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: #32B24E;
+
+  color: #FFFFFF;
+  font-family: Roboto;
+font-weight: 400;
+font-size: 16px;
+outline: none;
+}
+
+
+.input_blck{
+  width: 314px;
+  height: 40px;
+  background-color: #FFFFFF;
+  border: 4px solid #F5F5F566 ;
+  border-radius: 4px;
+  position: relative;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.input_blck input{
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+}
+
+
+.ser{
+  position: absolute;
+  left: 14px;
+  top: 8px;
+  cursor: pointer;
+}
+
+
+.txt2{
+  padding: 12px 0 30px;
+  font-family: Arial;
+font-weight: 400;
+font-size: 24px;
+color: #000000;
+}
+
+
+.itemg{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  display: flex;
+  background-color: orangered;
+}
+
+.img_left{
+display: flex;
+align-items: center;
+}
+
+.imgp{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.txt3{
+font-weight: 400;
+font-size: 14px;
+color: #000000E5;
+padding-left: 16px;
+}
+
+
+.txt4{
+  font-family: Roboto;
+font-weight: 700;
+font-size: 14px;
+  color: #666666;
+  padding-left: 9px;
+}
+
+
+.info_left{
+  display: flex;
+  align-items: center;
+  gap: 19px;
+  margin-left: 30px;
+}
+
+
+
+.btn2{
+width: 103px;
+height: 36px;
+cursor: pointer;
+border: none;
+border-radius: 5px;
+background-color: #32B24E;
+
+color: #FFFFFF;
+font-weight: 400;
+font-size: 12px;
+}
+
+.txt5{
+  padding: 0 0 0;
+  font-family: Roboto;
+font-weight: 700;
+font-size: 16px;
+color: #32B24E;
+}
+
+
+
+/* modal */
+.accordion-content {
+  /* max-height: 0; */
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+.accordion-item.active .accordion-header {
+  background: #ddd;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  justify-content: center;
+  align-items: center;
+}
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+.close-btn {
+  cursor: pointer;
+  float: right;
+}
+
+
+.favorite-item{
+  display: flex;
+  justify-content: space-between;
+  /* width: 400px;
+  height: 40px; */
+}
+
+.txt6{
+  font-size: 10px;
+}
+
+
+.txt7{
+  font-size: 9px;
+}
+
+.lftr{
+  display: flex;
+}
+/* modal */
